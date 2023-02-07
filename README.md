@@ -24,3 +24,21 @@ Step 4.1.4: Type, ``` ssh -i /path/key-pair-name.pem instance-user-name@instance
 Step 4.1.5: In Command Prompt, after succesfully connected to EC2 Instance, we could able to see our selected OS Image on screen.
 
 Step 4.1.6: Type, ``` sudo su ```. Follow the steps from here on.
+
+Step 4.1.7: Navigate to Jenkins website, use this link: ``` https://pkg.jenkins.io/redhat-stable/ ```. This link will help us to download proper Jenkins file on our EC2 Instance.
+
+Step 4.1.8: ``` sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo ```.
+
+Step 4.1.9: ``` sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key  ```.
+
+Step 4.1.10: ``` yum install fontconfig java-11-openjdk -y ```.
+
+Step 4.1.11: ``` yum install jenkins -y ```.
+
+Step 4.1.12: After following the above steps, now check your Jenkins. ``` jenkins --version ```.
+
+Step 4.1.13: If you can see Jenkins version this installation is succesful.
+
+Step 4.1.14: Now goto, EC2 Instance Security Group, Select Inbound rule && Edit rule.
+
+Step 4.1.15: ``` All Traffic ```, ``` Any where IP ```, ``` Save ```.
