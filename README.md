@@ -42,3 +42,5 @@ Step 4.1.13: If you can see Jenkins version this installation is succesful.
 Step 4.1.14: Now goto, EC2 Instance Security Group, Select Inbound rule && Edit rule.
 
 Step 4.1.15: ``` All Traffic ```, ``` Any where IP ```, ``` Save ```.
+
+Step 4.1.16: Copy ```IP Address:8080```, in any browser and check Jenkins is installed or not in EC2 Instance.
